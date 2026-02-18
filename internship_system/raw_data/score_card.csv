@@ -1,0 +1,16 @@
+Score,Description,Example
+5,Total Outage,The entire website or app is down for all users.
+3,Partial Outage,"A major feature (like ""Checkout"") is broken for many."
+1,Cosmetic/Minor,A typo on the homepage or a broken button for one user.
+,,
+,,
+Score,Description,Example
+5,Immediate,"Data is being corrupted or we are losing $1,000/minute."
+3,Mid-term,"Work can continue, but it must be fixed by end of day."
+1,Long-term,Can wait for the next scheduled update/sprint.
+,,
+,,
+Score,Description,Example
+5,Verified,Automated system logs showing a 500 Error.
+3,Internal,Multiple employees reporting the same issue.
+1,Unverified,"One person on Twitter said ""the site feels slow."""

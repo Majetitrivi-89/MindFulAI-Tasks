@@ -1,0 +1,10 @@
+
+job_contexts = {
+    "Data_Analyst": ["python", "sql", "tableau", "excel"],
+    "Web_Developer": ["javascript", "react", "css", "html"],
+    "Java_Developer": ["java", "spring", "maven"]
+}
+
+
+current_role = "Data_Analyst"
+TARGET_SKILLS = job_contexts[current_role]

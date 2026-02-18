@@ -1,0 +1,31 @@
+Name,Email,College,Skills,Preferred Role,Availability,CGPA
+Aditya Verma,aditya.v@nit.edu,NIT,"Python, SQL, Tableau",Data Analyst,3 months,8.5
+Priya Sharma,priya.s@vit.ac.in,VIT,"Java, Spring Boot, React",Backend Dev,6 months,9.1
+Rahul Nair,rahul.nair@mit.edu,MIT,"HTML, CSS, JavaScript",Frontend Dev,2 months,7.8
+Sneha Gupta,sneha.g@iiit.edu,IIIT,"Python, C++, Linux",Cloud Intern,4 months,8.9
+Aditya Verma,aditya.v@nit.edu,NIT,"Python, SQL, Tableau",Data Analyst,3 months,8.5
+Vikram Rathore,vikram.r@lpu.in,LPU,"PHP, MySQL, Laravel",Web Dev,5 months,6.5
+Ananya Iyer,ananya.i@bits.edu,BITS,"R, Python, Tableau",Data Analyst,,9.2
+Kevin Dsouza,kevin.d@stx.edu,St. Xavier,"Python, Django, Postgres",Backend Dev,3 months,8
+Sara Khan,sara.k@amu.ac.in,AMU,,Digital Marketing,2 months,7.4
+Rohan Mehta,rohan.m@du.ac.in,DU,"Java, Android, Kotlin",Mobile Dev,4 months,8.3
+Priya Sharma,priya.s@vit.ac.in,VIT,"Java, Spring Boot, React",Backend Dev,6 months,9.1
+Ishaan Malhotra,ishaan.m@thapar.edu,Thapar,"C#, Unity, Blender",Game Dev,3 months,7.9
+Megha Das,megha.d@kiit.ac.in,KIIT,"Python, Scikit-learn, Pandas",ML Engineer,6 months,8.7
+John Doe,john.doe@gmail.com,Global Uni,"Python, Flask",Fullstack,,8.2
+Riya Sen,riya.sen@uop.edu,UOP,"Figma, Adobe XD",UI/UX,3 months,9
+Arjun Reddy,arjun.r@osmania.edu,Osmania,"Python, Go, Docker",DevOps,5 months,8.1
+Sanya Mirza,sanya.m@jamia.edu,Jamia,"JavaScript, Node.js",Fullstack,4 months,
+Leo Das,leo.das@loyola.edu,Loyola,"Swift, iOS",Mobile Dev,2 months,7.6
+Tanmay Bhat,tanmay.b@iit.edu,IIT,"C++, Algorithms, DSA",SDE Intern,6 months,9.5
+Ayesha Takia,ayesha.t@mumbai.edu,MU,"Marketing, SEO",Digital Marketing,3 months,7.2
+Rahul Nair,rahul.nair@mit.edu,MIT,"HTML, CSS, JavaScript",Frontend Dev,2 months,7.8
+Zoya Akhtar,zoya.a@tiss.edu,TISS,"HR, Management",HR Intern,6 months,8.4
+Manish Paul,manish.p@ipu.ac.in,IPU,"SQL, PowerBI, Excel",Data Analyst,4 months,7
+Chris Evans,chris.e@marvel.edu,Marvel Uni,"Java, C++",SDE,3 months,
+Simran Kaur,simran.k@pau.edu,PAU,"Python, OpenCV, ML",ML Engineer,5 months,8.8
+Amit Shah,amit.s@gujarat.edu,GU,"Python, Django",Backend Dev,2 months,7.5
+Neha Kakkar,neha.k@du.ac.in,DU,"Singing, Management",Creative,4 months,6.9
+Kabir Singh,kabir.s@ims.edu,IMS,"Medical, Python",Research,6 months,9
+Kiara Advani,kiara.a@mu.ac.in,MU,"Python, SQL",Data Analyst,3 months,8.2
+Kunal Kamra,kunal.k@comedy.in,Standup,"Writing, Editing",Content,,7.1

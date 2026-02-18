@@ -1,0 +1,41 @@
+Incident_ID,Source,Raw_Severity,Impact_Scope,Urgency_Level,Reliability,Description
+INC-1001,Server_Monitor,Critical,10,10,0.98,Primary Database Heartbeat Failure
+INC-1002,Payment_Gateway,High,MISSING,10,0.95,API Timeout: Credit Card Processing
+INC-1003,Customer_Support,Medium,4,3,MISSING,User cannot upload profile picture
+INC-1004,Security_Tool,Critical,10,10,0.99,SQL Injection attempt detected
+INC-1005,Server_Monitor,MISSING,7,8,0.85,CPU Spike > 95% on Web_Server_03
+INC-1006,Payment_Gateway,Low,2,2,0.9,Minor latency in refund processing
+INC-1007,Customer_Support,High,8,MISSING,0.65,Checkout button missing
+INC-1008,Security_Tool,Medium,5,6,0.8,Brute force attempt
+INC-1009,Server_Monitor,Low,1,2,0.95,Disk Space Warning: Log Partition
+INC-1010,MISSING,Critical,10,10,1,Total Gateway Connection Failure
+INC-1011,Customer_Support,Low,3,2,0.55,Typo found in Terms of Service
+INC-1012,Security_Tool,High,7,9,MISSING,Unauthorized SSH login attempt
+INC-1013,Server_Monitor,Medium,MISSING,5,0.88,Memory Leak in Analytics Service
+INC-1014,Payment_Gateway,High,8,8,0.94,Double-billing reported
+INC-1015,Customer_Support,Medium,4,4,0.75,Reset Password email not sending
+INC-1016,Security_Tool,Critical,9,10,0.97,Ransomware signature detected
+INC-1017,Server_Monitor,Medium,6,MISSING,0.82,DNS Resolution intermittent
+INC-1018,Payment_Gateway,Low,3,3,0.85,Incorrect currency symbol
+INC-1019,Customer_Support,MISSING,7,7,0.6,"""Service Unavailable"" in Mobile App"
+INC-1020,Security_Tool,Low,2,1,0.9,Port scan detected
+INC-1021,Server_Monitor,Critical,10,10,0.99,Load Balancer 01 is Offline
+INC-1022,Payment_Gateway,Medium,5,6,MISSING,PayPal 403 Forbidden
+INC-1023,Customer_Support,Low,2,2,0.5,Dark mode toggle not working
+INC-1024,Security_Tool,High,MISSING,9,0.93,Data egress spike detected
+INC-1025,Server_Monitor,Medium,4,5,0.87,Redis Cache eviction rate high
+INC-1026,Payment_Gateway,Critical,10,10,0.98,Stripe Webhook failure
+INC-1027,Customer_Support,High,6,8,MISSING,Large scale login failures
+INC-1028,Security_Tool,Medium,3,5,0.78,Outdated SSL on staging
+INC-1029,Server_Monitor,MISSING,2,2,0.96,NTP Sync failure
+INC-1030,Payment_Gateway,High,9,9,0.94,Merchant dashboard not loading
+INC-1031,Customer_Support,Medium,5,MISSING,0.68,Notifications delayed
+INC-1032,Security_Tool,Critical,10,10,0.99,Root access gained by unknown
+INC-1033,Server_Monitor,High,8,7,0.89,S3 Bucket Permission Error
+INC-1034,Payment_Gateway,Low,MISSING,2,0.9,UI lag on History page
+INC-1035,Customer_Support,High,7,8,0.64,Promo codes not working
+INC-1036,Security_Tool,Medium,4,4,0.81,XSS vulnerability found
+INC-1037,Server_Monitor,Critical,10,10,MISSING,Kernel Panic on Database
+INC-1038,Payment_Gateway,Medium,6,5,0.88,Latency in Tokenization
+INC-1039,Customer_Support,Low,2,1,0.55,User FAQ images broken
+INC-1040,Security_Tool,MISSING,9,9,0.95,Firewall rule change
