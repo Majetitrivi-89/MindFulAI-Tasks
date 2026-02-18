@@ -1,0 +1,41 @@
+Incident_ID,Source,Raw_Severity,Impact_Scope,Urgency_Level,Reliability,Description
+INC-1001,Server_Monitor,Critical,10,10,0.98,Primary Database Heartbeat Failure
+INC-1002,Payment_Gateway,High,9,10,0.95,API Timeout: Credit Card Processing
+INC-1003,Customer_Support,Medium,4,3,0.7,User cannot upload profile picture
+INC-1004,Security_Tool,Critical,10,10,0.99,SQL Injection attempt detected on Port 80
+INC-1005,Server_Monitor,High,7,8,0.85,CPU Spike > 95% on Web_Server_03
+INC-1006,Payment_Gateway,Low,2,2,0.9,Minor latency in refund processing
+INC-1007,Customer_Support,High,8,9,0.65,"Multiple reports: ""Checkout button missing"""
+INC-1008,Security_Tool,Medium,5,6,0.8,Brute force attempt from IP 192.168.1.45
+INC-1009,Server_Monitor,Low,1,2,0.95,Disk Space Warning: Log Partition (85%)
+INC-1010,Payment_Gateway,Critical,10,10,1,Total Gateway Connection Failure
+INC-1011,Customer_Support,Low,3,2,0.55,Typo found in Terms of Service page
+INC-1012,Security_Tool,High,7,9,0.92,Unauthorized SSH login attempt
+INC-1013,Server_Monitor,Medium,5,5,0.88,Memory Leak in Analytics Service
+INC-1014,Payment_Gateway,High,8,8,0.94,Double-billing reported by 50 users
+INC-1015,Customer_Support,Medium,4,4,0.75,Reset Password email not sending
+INC-1016,Security_Tool,Critical,9,10,0.97,Ransomware signature detected on FileServer
+INC-1017,Server_Monitor,Medium,6,4,0.82,DNS Resolution intermittent in US-East
+INC-1018,Payment_Gateway,Low,3,3,0.85,Incorrect currency symbol in receipts
+INC-1019,Customer_Support,High,7,7,0.6,"""Service Unavailable"" errors in Mobile App"
+INC-1020,Security_Tool,Low,2,1,0.9,Port scan detected from external range
+INC-1021,Server_Monitor,Critical,10,10,0.99,Load Balancer 01 is Offline
+INC-1022,Payment_Gateway,Medium,5,6,0.91,PayPal integration returning 403 Forbidden
+INC-1023,Customer_Support,Low,2,2,0.5,Dark mode toggle not working on Safari
+INC-1024,Security_Tool,High,8,9,0.93,Data egress spike detected (Exfiltration?)
+INC-1025,Server_Monitor,Medium,4,5,0.87,Redis Cache eviction rate high
+INC-1026,Payment_Gateway,Critical,10,10,0.98,Stripe Webhook signature verification failing
+INC-1027,Customer_Support,High,6,8,0.72,Large scale login failures reported
+INC-1028,Security_Tool,Medium,3,5,0.78,Outdated SSL certificate on staging
+INC-1029,Server_Monitor,Low,2,2,0.96,NTP Sync failure on Cron_Job_Server
+INC-1030,Payment_Gateway,High,9,9,0.94,Merchant dashboard not loading
+INC-1031,Customer_Support,Medium,5,4,0.68,In-app notifications delayed by 30 mins
+INC-1032,Security_Tool,Critical,10,10,0.99,Root access gained by unknown user
+INC-1033,Server_Monitor,High,8,7,0.89,S3 Bucket Permission Error (Public Write)
+INC-1034,Payment_Gateway,Low,1,2,0.9,"UI lag on ""Transaction History"" page"
+INC-1035,Customer_Support,High,7,8,0.64,Customers unable to apply promo codes
+INC-1036,Security_Tool,Medium,4,4,0.81,XSS vulnerability found in search bar
+INC-1037,Server_Monitor,Critical,10,10,0.97,Kernel Panic on Core Database Node
+INC-1038,Payment_Gateway,Medium,6,5,0.88,Latency spike in Tokenization Service
+INC-1039,Customer_Support,Low,2,1,0.55,User FAQ page images are broken
+INC-1040,Security_Tool,High,9,9,0.95,Firewall rule change by unauthorized admin

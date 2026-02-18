@@ -1,0 +1,166 @@
+# Incident Response Report
+
+## Ranked Incidents
+Incident_ID           Source Raw_Severity  Impact_Scope  Urgency_Level  Reliability                                   Description  Final_Score                        Action_Plan
+   INC-1010  Payment_Gateway     Critical            10             10         1.00              Total Gateway Connection Failure       10.000  P0 - IMMEDIATE EMERGENCY RESPONSE
+   INC-1004    Security_Tool     Critical            10             10         0.99     SQL Injection attempt detected on Port 80        9.900  P0 - IMMEDIATE EMERGENCY RESPONSE
+   INC-1021   Server_Monitor     Critical            10             10         0.99                   Load Balancer 01 is Offline        9.900  P0 - IMMEDIATE EMERGENCY RESPONSE
+   INC-1032    Security_Tool     Critical            10             10         0.99            Root access gained by unknown user        9.900  P0 - IMMEDIATE EMERGENCY RESPONSE
+   INC-1026  Payment_Gateway     Critical            10             10         0.98 Stripe Webhook signature verification failing        9.800  P0 - IMMEDIATE EMERGENCY RESPONSE
+   INC-1001   Server_Monitor     Critical            10             10         0.98            Primary Database Heartbeat Failure        9.800  P0 - IMMEDIATE EMERGENCY RESPONSE
+   INC-1037   Server_Monitor     Critical            10             10         0.97            Kernel Panic on Core Database Node        9.700  P0 - IMMEDIATE EMERGENCY RESPONSE
+   INC-1016    Security_Tool     Critical             9             10         0.97   Ransomware signature detected on FileServer        9.118  P0 - IMMEDIATE EMERGENCY RESPONSE
+   INC-1002  Payment_Gateway         High             9             10         0.95           API Timeout: Credit Card Processing        8.930  P0 - IMMEDIATE EMERGENCY RESPONSE
+   INC-1040    Security_Tool         High             9              9         0.95    Firewall rule change by unauthorized admin        8.550  P0 - IMMEDIATE EMERGENCY RESPONSE
+   INC-1030  Payment_Gateway         High             9              9         0.94                Merchant dashboard not loading        8.460 P1 - HIGH PRIORITY (Respond < 1hr)
+   INC-1024    Security_Tool         High             8              9         0.93    Data egress spike detected (Exfiltration?)        7.812 P1 - HIGH PRIORITY (Respond < 1hr)
+   INC-1014  Payment_Gateway         High             8              8         0.94           Double-billing reported by 50 users        7.520 P1 - HIGH PRIORITY (Respond < 1hr)
+   INC-1012    Security_Tool         High             7              9         0.92                Unauthorized SSH login attempt        7.176 P1 - HIGH PRIORITY (Respond < 1hr)
+   INC-1033   Server_Monitor         High             8              7         0.89     S3 Bucket Permission Error (Public Write)        6.764         P2 - MEDIUM (Daily Review)
+   INC-1005   Server_Monitor         High             7              8         0.85              CPU Spike > 95% on Web_Server_03        6.290         P2 - MEDIUM (Daily Review)
+   INC-1007 Customer_Support         High             8              9         0.65   Multiple reports: "Checkout button missing"        5.460         P2 - MEDIUM (Daily Review)
+   INC-1038  Payment_Gateway       Medium             6              5         0.88         Latency spike in Tokenization Service        4.928         P2 - MEDIUM (Daily Review)
+   INC-1022  Payment_Gateway       Medium             5              6         0.91    PayPal integration returning 403 Forbidden        4.914         P2 - MEDIUM (Daily Review)
+   INC-1027 Customer_Support         High             6              8         0.72           Large scale login failures reported        4.896         P2 - MEDIUM (Daily Review)
+   INC-1035 Customer_Support         High             7              8         0.64         Customers unable to apply promo codes        4.736         P2 - MEDIUM (Daily Review)
+   INC-1013   Server_Monitor       Medium             5              5         0.88              Memory Leak in Analytics Service        4.400         P2 - MEDIUM (Daily Review)
+   INC-1008    Security_Tool       Medium             5              6         0.80      Brute force attempt from IP 192.168.1.45        4.320         P2 - MEDIUM (Daily Review)
+   INC-1017   Server_Monitor       Medium             6              4         0.82        DNS Resolution intermittent in US-East        4.264         P2 - MEDIUM (Daily Review)
+   INC-1019 Customer_Support         High             7              7         0.60    "Service Unavailable" errors in Mobile App        4.200         P2 - MEDIUM (Daily Review)
+   INC-1025   Server_Monitor       Medium             4              5         0.87                Redis Cache eviction rate high        3.828                P3 - LOW (Log Only)
+   INC-1036    Security_Tool       Medium             4              4         0.81         XSS vulnerability found in search bar        3.240                P3 - LOW (Log Only)
+   INC-1031 Customer_Support       Medium             5              4         0.68       In-app notifications delayed by 30 mins        3.128                P3 - LOW (Log Only)
+   INC-1015 Customer_Support       Medium             4              4         0.75              Reset Password email not sending        3.000                P3 - LOW (Log Only)
+   INC-1028    Security_Tool       Medium             3              5         0.78           Outdated SSL certificate on staging        2.964                P3 - LOW (Log Only)
+   INC-1018  Payment_Gateway          Low             3              3         0.85         Incorrect currency symbol in receipts        2.550                P3 - LOW (Log Only)
+   INC-1003 Customer_Support       Medium             4              3         0.70            User cannot upload profile picture        2.520                P3 - LOW (Log Only)
+   INC-1029   Server_Monitor          Low             2              2         0.96           NTP Sync failure on Cron_Job_Server        1.920                P3 - LOW (Log Only)
+   INC-1006  Payment_Gateway          Low             2              2         0.90            Minor latency in refund processing        1.800                P3 - LOW (Log Only)
+   INC-1020    Security_Tool          Low             2              1         0.90        Port scan detected from external range        1.440                P3 - LOW (Log Only)
+   INC-1011 Customer_Support          Low             3              2         0.55           Typo found in Terms of Service page        1.430                P3 - LOW (Log Only)
+   INC-1009   Server_Monitor          Low             1              2         0.95       Disk Space Warning: Log Partition (85%)        1.330                P3 - LOW (Log Only)
+   INC-1034  Payment_Gateway          Low             1              2         0.90          UI lag on "Transaction History" page        1.260                P3 - LOW (Log Only)
+   INC-1023 Customer_Support          Low             2              2         0.50        Dark mode toggle not working on Safari        1.000                P3 - LOW (Log Only)
+   INC-1039 Customer_Support          Low             2              1         0.55               User FAQ page images are broken        0.880                P3 - LOW (Log Only)
+
+## Automated Response Actions
+Processing INC-1010 (Score: 10.00)...
+🚨 CRITICAL ALERT: Paging On-Call Engineer for: Total Gateway Connection Failure
+------------------------------
+Processing INC-1004 (Score: 9.90)...
+🚨 CRITICAL ALERT: Paging On-Call Engineer for: SQL Injection attempt detected on Port 80
+------------------------------
+Processing INC-1021 (Score: 9.90)...
+🚨 CRITICAL ALERT: Paging On-Call Engineer for: Load Balancer 01 is Offline
+------------------------------
+Processing INC-1032 (Score: 9.90)...
+🚨 CRITICAL ALERT: Paging On-Call Engineer for: Root access gained by unknown user
+------------------------------
+Processing INC-1026 (Score: 9.80)...
+🚨 CRITICAL ALERT: Paging On-Call Engineer for: Stripe Webhook signature verification failing
+------------------------------
+Processing INC-1001 (Score: 9.80)...
+🚨 CRITICAL ALERT: Paging On-Call Engineer for: Primary Database Heartbeat Failure
+------------------------------
+Processing INC-1037 (Score: 9.70)...
+🚨 CRITICAL ALERT: Paging On-Call Engineer for: Kernel Panic on Core Database Node
+------------------------------
+Processing INC-1016 (Score: 9.12)...
+🚨 CRITICAL ALERT: Paging On-Call Engineer for: Ransomware signature detected on FileServer
+------------------------------
+Processing INC-1002 (Score: 8.93)...
+🚨 CRITICAL ALERT: Paging On-Call Engineer for: API Timeout: Credit Card Processing
+------------------------------
+Processing INC-1040 (Score: 8.55)...
+🚨 CRITICAL ALERT: Paging On-Call Engineer for: Firewall rule change by unauthorized admin
+------------------------------
+Processing INC-1030 (Score: 8.46)...
+💬 SLACK NOTIFICATION: Posting to #ops-alerts: Merchant dashboard not loading
+------------------------------
+Processing INC-1024 (Score: 7.81)...
+💬 SLACK NOTIFICATION: Posting to #ops-alerts: Data egress spike detected (Exfiltration?)
+------------------------------
+Processing INC-1014 (Score: 7.52)...
+💬 SLACK NOTIFICATION: Posting to #ops-alerts: Double-billing reported by 50 users
+------------------------------
+Processing INC-1012 (Score: 7.18)...
+💬 SLACK NOTIFICATION: Posting to #ops-alerts: Unauthorized SSH login attempt
+------------------------------
+Processing INC-1033 (Score: 6.76)...
+🎫 TICKET CREATED: Assigned to backlog: S3 Bucket Permission Error (Public Write)
+------------------------------
+Processing INC-1005 (Score: 6.29)...
+🎫 TICKET CREATED: Assigned to backlog: CPU Spike > 95% on Web_Server_03
+------------------------------
+Processing INC-1007 (Score: 5.46)...
+🎫 TICKET CREATED: Assigned to backlog: Multiple reports: "Checkout button missing"
+------------------------------
+Processing INC-1038 (Score: 4.93)...
+🎫 TICKET CREATED: Assigned to backlog: Latency spike in Tokenization Service
+------------------------------
+Processing INC-1022 (Score: 4.91)...
+🎫 TICKET CREATED: Assigned to backlog: PayPal integration returning 403 Forbidden
+------------------------------
+Processing INC-1027 (Score: 4.90)...
+🎫 TICKET CREATED: Assigned to backlog: Large scale login failures reported
+------------------------------
+Processing INC-1035 (Score: 4.74)...
+🎫 TICKET CREATED: Assigned to backlog: Customers unable to apply promo codes
+------------------------------
+Processing INC-1013 (Score: 4.40)...
+🎫 TICKET CREATED: Assigned to backlog: Memory Leak in Analytics Service
+------------------------------
+Processing INC-1008 (Score: 4.32)...
+🎫 TICKET CREATED: Assigned to backlog: Brute force attempt from IP 192.168.1.45
+------------------------------
+Processing INC-1017 (Score: 4.26)...
+🎫 TICKET CREATED: Assigned to backlog: DNS Resolution intermittent in US-East
+------------------------------
+Processing INC-1019 (Score: 4.20)...
+🎫 TICKET CREATED: Assigned to backlog: "Service Unavailable" errors in Mobile App
+------------------------------
+Processing INC-1025 (Score: 3.83)...
+📁 LOGGED: Record stored for analytics.
+------------------------------
+Processing INC-1036 (Score: 3.24)...
+📁 LOGGED: Record stored for analytics.
+------------------------------
+Processing INC-1031 (Score: 3.13)...
+📁 LOGGED: Record stored for analytics.
+------------------------------
+Processing INC-1015 (Score: 3.00)...
+📁 LOGGED: Record stored for analytics.
+------------------------------
+Processing INC-1028 (Score: 2.96)...
+📁 LOGGED: Record stored for analytics.
+------------------------------
+Processing INC-1018 (Score: 2.55)...
+📁 LOGGED: Record stored for analytics.
+------------------------------
+Processing INC-1003 (Score: 2.52)...
+📁 LOGGED: Record stored for analytics.
+------------------------------
+Processing INC-1029 (Score: 1.92)...
+📁 LOGGED: Record stored for analytics.
+------------------------------
+Processing INC-1006 (Score: 1.80)...
+📁 LOGGED: Record stored for analytics.
+------------------------------
+Processing INC-1020 (Score: 1.44)...
+📁 LOGGED: Record stored for analytics.
+------------------------------
+Processing INC-1011 (Score: 1.43)...
+📁 LOGGED: Record stored for analytics.
+------------------------------
+Processing INC-1009 (Score: 1.33)...
+📁 LOGGED: Record stored for analytics.
+------------------------------
+Processing INC-1034 (Score: 1.26)...
+📁 LOGGED: Record stored for analytics.
+------------------------------
+Processing INC-1023 (Score: 1.00)...
+📁 LOGGED: Record stored for analytics.
+------------------------------
+Processing INC-1039 (Score: 0.88)...
+📁 LOGGED: Record stored for analytics.
+------------------------------
